@@ -5,12 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Formulario de Steam</title>
 </head>
 
 <body>
   <header>
-    <h1>Steam: Datos de usuarios</h1>
+    <h1>Encuesta de usuario de Steam</h1>
     <p>Gracias por contestar nuestra encuesta y ayudar a la comunidad!</p>
   </header>
 
@@ -43,12 +46,41 @@
       <input type="radio" id="valor-5" name="recomendaciones" value="5">
     </div> <!-- Recomendaciones -->
 
-    <div>
+    <div class="funcionalidades">
       <p>¿Cuál de estas funcionalidad utilizas más en la plataforma?</p>
-
-
-
+      <select name="funcionalidades">
+        <option value="eleccion" disabled selected>Elige una opción</option>
+        <option value="tienda">Tienda</option>
+        <option value="comunidad">Comunidad</option>
+        <option value="biblioteva">Biblioteca</option>
+      </select>
     </div>
+
+    <div class="genero">
+      <p>¿Qué género dentro de los videojuegos prefieres?</p>
+      <label for="accion">Acción</label>
+      <input type="checkbox" id="accion" name="genero">
+      <label for="aventura">Aventura</label>
+      <input type="checkbox" id="aventura" name="genero">
+      <label for="rol">Rol</label>
+      <input type="checkbox" id="rol" name="genero">
+      <label for="simulacion">Simulación</label>
+      <input type="checkbox" id="simulacion" name="genero">
+      <label for="estrategia">Estrategia</label>
+      <input type="checkbox" id="estrategia" name="genero">
+      <label for="deportes">Deportes</label>
+      <input type="checkbox" id="deportes" name="genero">
+    </div>
+
+    <div class="area-texto">
+      <p>¿Tienes alguna sugerencia para la plataforma?</p>
+      <input type="text" placeholder="Escriba aquí" id="area">
+    </div>
+
+    <div class="submit">
+      <button type="submit" id="submit" class="boton-submit">Enviar</button>
+    </div>
+
   </form>
 </body>
 
