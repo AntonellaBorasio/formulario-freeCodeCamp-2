@@ -1,0 +1,115 @@
+/* Variables, generales y body */
+
+:root {
+  --azul: rgb(28, 53, 83);
+  --azul-oscuro: rgb(23, 26, 33);
+  --blanco: rgb(243, 243, 243);
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: var(--blanco);
+  background-image: url("https://images.unsplash.com/photo-1498116069452-debf99cb30f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  margin: 2rem auto;
+  background-image: url("https://images.unsplash.com/photo-1498116069452-debf99cb30f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+@media (min-width: 480px) {
+  body {
+    max-width: 60%;
+  }
+}
+
+/* Header */
+
+header {
+  background-color: rgba(23, 26, 33, 0.7);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.agradecimiento {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .agradecimiento {
+    font-size: 2rem;
+  }
+}
+
+/* Formulario */
+
+/* General */
+
+form {
+  background-color: rgba(28, 53, 83, 0.7);
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2rem;
+  }
+}
+/* Datos básicos */
+
+.grupo-datos {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+#texto {
+  width: 100%;
+}
+
+.caja-input {
+  width: 100%;
+  padding: 15px 5px;
+  font-size: 1.5rem;
+  border: 3px solid var(--azul-oscuro);
+  border-radius: 10px;
+  background-color: var(--blanco);
+}
+
+/* Botón */
+
+.boton {
+  width: 100%;
+  background-color: var(--azul-oscuro);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blanco);
+  border: 0.1px solid var(--blanco);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
