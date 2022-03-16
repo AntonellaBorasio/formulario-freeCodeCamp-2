@@ -15,7 +15,40 @@
   </header>
 
   <form action="">
+    <div class="datos-basicos">
 
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="datos-basicos" required placeholder="Nombre">
+
+      <label for="mail">Mail</label>
+      <input type="email" id="mail" name="datos-basicos" required placeholder="Email">
+
+      <label for="edad">Edad</label>
+      <input type="number" id="edad" value="Edad" name="datos-basicos" required placeholder="Edad">
+
+    </div> <!-- Datos básicos -->
+
+    <div class="recomendaciones">
+      <p> Del 1 al 5 (siendo 5 el mayor valor de satisfacción, ¿cuál es tu grado de satisfacción con la plataforma?
+      </p>
+      <label for="valor-1">1</label>
+      <input type="radio" id="valor-1" name="recomendaciones" value="1" checked>
+      <label for="valor-2">2</label>
+      <input type="radio" id="valor-2" name="recomendaciones" value="2">
+      <label for="valor-3">3</label>
+      <input type="radio" id="valor-3" name="recomendaciones" value="3">
+      <label for="valor-4">4</label>
+      <input type="radio" id="valor-4" name="recomendaciones" value="4">
+      <label for="valor-5">5</label>
+      <input type="radio" id="valor-5" name="recomendaciones" value="5">
+    </div> <!-- Recomendaciones -->
+
+    <div>
+      <p>¿Cuál de estas funcionalidad utilizas más en la plataforma?</p>
+
+
+
+    </div>
   </form>
 </body>
 
