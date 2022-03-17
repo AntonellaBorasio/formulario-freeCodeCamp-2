@@ -22,31 +22,36 @@
 
   <form action="">
     <div class="grupo-datos">
-      <label for="nombre">Nombre</label>
+      <label for="nombre" class="etiqueta-datos">Nombre</label>
       <input type="text" id="nombre" name="datos-basicos" required placeholder="Nombre" class="caja-input">
     </div><!-- Nombre -->
     <div class="grupo-datos">
-      <label for="email">Mail</label>
+      <label for="email" class="etiqueta-datos">Mail</label>
       <input type="email" id="email" name="datos-basicos" required placeholder="Email" class="caja-input">
     </div><!-- Email -->
     <div class="grupo-datos">
-      <label for="edad">Edad</label>
+      <label for="edad" class="etiqueta-datos">Edad</label>
       <input type="number" id="edad" value="Edad" name="datos-basicos" required placeholder="Edad" class="caja-input">
     </div><!-- Edad -->
 
     <div class="recomendaciones">
       <p> Del 1 al 5 (siendo 5 el mayor puntaje), ¿cuál es tu grado de satisfacción con la plataforma?
       </p>
-      <label for="valor-1">1</label>
-      <input type="radio" id="valor-1" name="recomendaciones" value="1" checked>
-      <label for="valor-2">2</label>
-      <input type="radio" id="valor-2" name="recomendaciones" value="2">
-      <label for="valor-3">3</label>
-      <input type="radio" id="valor-3" name="recomendaciones" value="3">
-      <label for="valor-4">4</label>
-      <input type="radio" id="valor-4" name="recomendaciones" value="4">
       <label for="valor-5">5</label>
-      <input type="radio" id="valor-5" name="recomendaciones" value="5">
+      <input type="radio" id="valor-5" name="recomendaciones" value="5" checked class="radios">
+      <br>
+      <label for="valor-4">4</label>
+      <input type="radio" id="valor-4" name="recomendaciones" value="4" class="radios">
+      <br>
+      <label for="valor-3">3</label>
+      <input type="radio" id="valor-3" name="recomendaciones" value="3" class="radios">
+      <br>
+      <label for="valor-2">2</label>
+      <input type="radio" id="valor-2" name="recomendaciones" value="2" class="radios">
+      <br>
+      <label for="valor-1">1</label>
+      <input type="radio" id="valor-1" name="recomendaciones" value="1" class="radios">
+      <br>
     </div> <!-- Recomendaciones -->
 
     <div class="funcionalidades">
@@ -61,23 +66,29 @@
 
     <div class="genero">
       <p>¿Qué género dentro de los videojuegos prefieres?</p>
-      <label for="accion">Acción</label>
-      <input type="checkbox" id="accion" name="genero">
-      <label for="aventura">Aventura</label>
-      <input type="checkbox" id="aventura" name="genero">
-      <label for="rol">Rol</label>
-      <input type="checkbox" id="rol" name="genero">
-      <label for="simulacion">Simulación</label>
-      <input type="checkbox" id="simulacion" name="genero">
-      <label for="estrategia">Estrategia</label>
-      <input type="checkbox" id="estrategia" name="genero">
-      <label for="deportes">Deportes</label>
-      <input type="checkbox" id="deportes" name="genero">
+      <label for="accion">
+        <input type="checkbox" id="accion" name="genero" class="genero">Acción</label>
+      <br>
+      <label for="aventura">
+        <input type="checkbox" id="aventura" name="genero" class="genero">Aventura</label>
+      <br>
+      <label for="rol">
+        <input type="checkbox" id="rol" name="genero" class="genero">Rol</label>
+      <br>
+      <label for="simulacion">
+        <input type="checkbox" id="simulacion" name="genero" class="genero">Simulación</label>
+      <br>
+      <label for="estrategia">
+        <input type="checkbox" id="estrategia" name="genero" class="genero">Estrategia</label>
+      <br>
+      <label for="deportes">
+        <input type="checkbox" id="deportes" name="genero" class="genero">Deportes</label>
+      <br>
     </div>
 
     <div class="area-texto">
       <p>¿Tienes alguna sugerencia para la plataforma?</p>
-      <textarea id="texto" name="texto" rows="5" class="caja-input">Escribe aquí</textarea>
+      <textarea id="texto" name="texto" rows="5" class="caja-input" placeholder="Escribe aquí"></textarea>
     </div>
 
     <div class="submit">

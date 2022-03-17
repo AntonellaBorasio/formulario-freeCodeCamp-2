@@ -72,6 +72,7 @@ form {
 p {
   font-size: 2rem;
   font-weight: 700;
+  margin: 2.5rem 0 1rem 0;
 }
 
 @media (min-width: 480px) {
@@ -79,16 +80,13 @@ p {
     padding: 2rem;
   }
 }
+
 /* Datos básicos */
 
 .grupo-datos {
   font-size: 2rem;
   font-weight: 700;
-  padding-bottom: 1rem;
-}
-
-#texto {
-  width: 100%;
+  padding-bottom: 2rem;
 }
 
 .caja-input {
@@ -98,6 +96,24 @@ p {
   border: 3px solid var(--azul-oscuro);
   border-radius: 10px;
   background-color: var(--blanco);
+}
+
+/* Recomendación */
+
+.radios {
+  margin: 1rem;
+}
+
+/* Géneros */
+
+.genero {
+  margin: 1.5rem 1rem 0 0;
+}
+
+/* Text area */
+
+#texto {
+  width: 100%;
 }
 
 /* Botón */
