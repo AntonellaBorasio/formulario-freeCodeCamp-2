@@ -15,14 +15,17 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   color: var(--blanco);
-  background-image: url("https://images.unsplash.com/photo-1498116069452-debf99cb30f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-  margin: 2rem auto;
-  background-image: url("https://images.unsplash.com/photo-1498116069452-debf99cb30f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-image: url("https://images7.alphacoders.com/805/805197.jpg");
+  margin: 2rem 0.5rem;
+  background-image: url("https://images.pexels.com/photos/10828608/pexels-photo-10828608.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 480px) {
   body {
     max-width: 60%;
+    margin: 2rem auto;
   }
 }
 
@@ -30,7 +33,7 @@ body {
 
 header {
   background-color: rgba(23, 26, 33, 0.7);
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   border-radius: 15px;
 }
@@ -72,12 +75,12 @@ form {
 p {
   font-size: 2rem;
   font-weight: 700;
-  margin: 2.5rem 0 1rem 0;
+  margin: 2rem 0 0.5rem 0;
 }
 
 @media (min-width: 480px) {
   form {
-    padding: 2rem;
+    padding: 3rem;
   }
 }
 
@@ -91,11 +94,12 @@ p {
 
 .caja-input {
   width: 100%;
-  padding: 15px 5px;
+  padding: 15px 10px;
   font-size: 1.5rem;
   border: 3px solid var(--azul-oscuro);
   border-radius: 10px;
   background-color: var(--blanco);
+  margin-top: 0.5rem;
 }
 
 /* Recomendación */
