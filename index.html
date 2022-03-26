@@ -14,24 +14,24 @@
 
 <body>
 
-
   <header>
-    <h1>Encuesta de usuario de Steam</h1>
-    <p class="agradecimiento">¡Gracias por contestar nuestra encuesta y ayudar a la comunidad!</p>
+    <h1 id="title">Encuesta de usuario de Steam</h1>
+    <p id="description">¡Gracias por contestar nuestra encuesta y ayudar a la comunidad!</p>
   </header>
 
-  <form action="">
+  <form id="survey-form" action="">
     <div class="grupo-datos">
-      <label for="nombre" class="etiqueta-datos">Nombre</label>
-      <input type="text" id="nombre" name="datos-basicos" required placeholder="Nombre" class="caja-input">
+      <label for="nombre" id="name-label">Nombre</label>
+      <input type="text" id="name" name="datos-basicos" required placeholder="Escribe tu nombre" class="caja-input">
     </div><!-- Nombre -->
     <div class="grupo-datos">
-      <label for="email" class="etiqueta-datos">Mail</label>
-      <input type="email" id="email" name="datos-basicos" required placeholder="Email" class="caja-input">
+      <label for="email" id="email-label">Mail</label>
+      <input type="email" id="email" name="datos-basicos" required placeholder="Escribe tu email" class="caja-input">
     </div><!-- Email -->
     <div class="grupo-datos">
-      <label for="edad" class="etiqueta-datos">Edad</label>
-      <input type="number" id="edad" value="Edad" name="datos-basicos" required placeholder="Edad" class="caja-input">
+      <label for="edad" id="number-label">Edad</label>
+      <input type="number" id="number" value="Edad" name="datos-basicos" required placeholder="Edad" class="caja-input"
+        min="18" max="99">
     </div><!-- Edad -->
 
     <div class="recomendaciones">
@@ -56,7 +56,7 @@
 
     <div class="funcionalidades">
       <p>¿Cuál de estas funcionalidad utilizas más en la plataforma?</p>
-      <select name="funcionalidades" class="caja-input">
+      <select id="dropdown" name="funcionalidades" class="caja-input">
         <option value="eleccion" disabled selected>Elige una opción</option>
         <option value="tienda">Tienda</option>
         <option value="comunidad">Comunidad</option>
@@ -67,22 +67,22 @@
     <div class="genero">
       <p>¿Qué género dentro de los videojuegos prefieres?</p>
       <label for="accion">
-        <input type="checkbox" id="accion" name="genero" class="genero">Acción</label>
+        <input type="checkbox" id="accion" name="genero" class="genero" value="accion">Acción</label>
       <br>
       <label for="aventura">
-        <input type="checkbox" id="aventura" name="genero" class="genero">Aventura</label>
+        <input type="checkbox" id="aventura" name="genero" class="genero" value="aventura">Aventura</label>
       <br>
       <label for="rol">
-        <input type="checkbox" id="rol" name="genero" class="genero">Rol</label>
+        <input type="checkbox" id="rol" name="genero" class="genero" value="rol">Rol</label>
       <br>
       <label for="simulacion">
-        <input type="checkbox" id="simulacion" name="genero" class="genero">Simulación</label>
+        <input type="checkbox" id="simulacion" name="genero" class="genero" value="simulacion">Simulación</label>
       <br>
       <label for="estrategia">
-        <input type="checkbox" id="estrategia" name="genero" class="genero">Estrategia</label>
+        <input type="checkbox" id="estrategia" name="genero" class="genero" value="estrategia">Estrategia</label>
       <br>
       <label for="deportes">
-        <input type="checkbox" id="deportes" name="genero" class="genero">Deportes</label>
+        <input type="checkbox" id="deportes" name="genero" class="genero" value="deportes">Deportes</label>
       <br>
     </div>
 

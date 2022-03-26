@@ -22,7 +22,7 @@ body {
   background-size: cover;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 500px) {
   body {
     max-width: 60%;
     margin: 2rem auto;
@@ -38,25 +38,25 @@ header {
   border-radius: 15px;
 }
 
-h1 {
+#title {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-@media (min-width: 480px) {
-  h1 {
+@media (min-width: 500px) {
+  #title {
     font-size: 3rem;
   }
 }
 
-.agradecimiento {
+#description {
   font-weight: 400;
   font-style: italic;
   font-size: 1.5rem;
 }
 
-@media (min-width: 480px) {
-  .agradecimiento {
+@media (min-width: 500px) {
+  #description {
     font-size: 2rem;
   }
 }
@@ -65,23 +65,23 @@ h1 {
 
 /* General */
 
-form {
+#survey-form {
   background-color: rgba(28, 53, 83, 0.7);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 15px;
   margin-top: 1rem;
+}
+
+@media (min-width: 500px) {
+  #survey-form {
+    padding: 2rem;
+  }
 }
 
 p {
   font-size: 2rem;
   font-weight: 700;
-  margin: 2rem 0 0.5rem 0;
-}
-
-@media (min-width: 480px) {
-  form {
-    padding: 3rem;
-  }
+  margin: 1.7rem 0 0.5rem 0;
 }
 
 /* Datos básicos */
@@ -106,12 +106,16 @@ p {
 
 .radios {
   margin: 1rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
 }
 
 /* Géneros */
 
 .genero {
   margin: 1.5rem 1rem 0 0;
+  min-height: 1.3rem;
+  min-width: 1.3rem;
 }
 
 /* Text area */
